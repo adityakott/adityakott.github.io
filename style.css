@@ -49,3 +49,32 @@
     margin-left: 0 !important;
   }
 }
+/* Replace decorative globe with research climatology */
+.hero-art.map-art {
+  height: auto;
+  min-height: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: visible;
+  background: none;
+}
+
+.climatology-map {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 680px;
+  object-fit: contain;
+}
+
+@media (max-width: 760px) {
+  .hero-art.map-art {
+    height: auto;
+    margin-top: 25px;
+  }
+
+  .climatology-map {
+    width: 100%;
+  }
+}
