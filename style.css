@@ -51,38 +51,23 @@
 }
 
 /* Research climatology */
-/* ITCZ climatology */
-.hero-art.map-art {
-  width: 100%;
-  height: auto;
-  min-height: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 12px;
-  overflow: visible;
-  background: none;
-}
-
+/* Slightly larger and right-shifted climatology map */
 .climatology-map {
-  display: block;
-  width: 100%;
-  max-width: 560px;
-  height: auto;
-  max-height: 400px;
-  object-fit: contain;
+  width: 112%;
+  max-width: 630px;
+  max-height: 440px;
+  transform: translateX(15px);
 }
 
-.map-description {
-  width: 100%;
-  max-width: 560px;
-  margin: 0;
-  text-align: left;
-}
-
-.map-description h3 {
-  font: 700 1rem Manrope, sans-serif;
+/* Keep the layout balanced on mobile */
+@media (max-width: 760px) {
+  .climatology-map {
+    width: 100%;
+    max-width: 100%;
+    max-height: none;
+    transform: none;
+  }
+}if;
   margin: 0 0 7px;
 }
 
