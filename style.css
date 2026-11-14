@@ -11,11 +11,29 @@
   color: #005f66;
   text-decoration: underline;
 }
+.hero-title-row {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
 .profile-photo {
-  width: 200px;
-  height: 200px;
+  width: 88px;
+  height: 88px;
   object-fit: cover;
   border-radius: 50%;
-  display: block;
-  margin: 0 auto 20px;
+  flex-shrink: 0;
+  margin: 0;
+  border: 2px solid var(--line);
+}
+
+@media (max-width: 760px) {
+  .hero-title-row {
+    gap: 14px;
+  }
+
+  .profile-photo {
+    width: 72px;
+    height: 72px;
+  }
 }
