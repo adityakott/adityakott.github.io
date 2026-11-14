@@ -49,13 +49,16 @@
     margin-left: 0 !important;
   }
 }
-/* Replace decorative globe with research climatology */
+/* Research climatology replacing decorative globe */
 .hero-art.map-art {
-  height: auto;
-  min-height: 0;
+  height: auto !important;
+  min-height: 0 !important;
   display: flex;
-  align-items: center;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+  gap: 12px;
+  padding: 10px;
   overflow: visible;
   background: none;
 }
@@ -63,18 +66,38 @@
 .climatology-map {
   display: block;
   width: 100%;
+  max-width: 480px;
+  max-height: 340px;
   height: auto;
-  max-width: 680px;
   object-fit: contain;
+}
+
+.map-description {
+  width: 100%;
+  max-width: 480px;
+  text-align: left;
+}
+
+.map-description h3 {
+  font: 700 1rem Manrope, sans-serif;
+  margin: 0 0 5px;
+}
+
+.map-description p {
+  color: var(--muted);
+  font-size: 0.8rem;
+  line-height: 1.55;
+  margin: 0;
 }
 
 @media (max-width: 760px) {
   .hero-art.map-art {
-    height: auto;
-    margin-top: 25px;
+    height: auto !important;
+    margin-top: 20px;
   }
 
   .climatology-map {
-    width: 100%;
+    max-width: 100%;
+    max-height: none;
   }
 }
