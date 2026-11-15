@@ -118,3 +118,10 @@
     width: 100%;
   }
 }
+.publication-status {
+  display: inline-block;
+  color: #a36b24;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-top: 5px;
+}
