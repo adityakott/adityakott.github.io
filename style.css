@@ -125,3 +125,24 @@
   font-weight: 600;
   margin-top: 5px;
 }
+.contact-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem 2rem;
+  margin-top: 1.5rem;
+}
+
+.contact-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.35);
+  padding-bottom: 0.2rem;
+  transition: border-color 0.2s ease, opacity 0.2s ease;
+}
+
+.contact-links a:hover {
+  border-bottom-color: currentColor;
+  opacity: 0.85;
+}
